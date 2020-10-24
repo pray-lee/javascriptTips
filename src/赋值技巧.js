@@ -35,6 +35,8 @@ if(variable !== null || variable !== undefined || variable !== '') {
 var variable2 = variable || ''
 // p.s 如果variable是一个数字，则先检查是否为0
 
+
+
 // -------------------对象数组表示法----------------------
 // 不要用:        
 var arr = new Array()
@@ -42,6 +44,20 @@ arr[0] = 'myString1'
 arr[1] = 'myString2'
 // 使用
 var arr = ['myString1', 'myString2']
+
+
+
+
+// -------------关联数组----------
+// 不要用:
+var skillSet = new Array()
+skillSet['Document language']= 'HTML5'
+skillSet['Styling language'] = 'CSS3'
+// 使用
+var skillSet = {
+    'Document language': 'HTML5',
+    'Styling language': 'CSS3'
+}
 
 
 
